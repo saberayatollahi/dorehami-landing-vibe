@@ -21,9 +21,8 @@ const About = () => {
             
             {/* Image */}
             <div className="order-1 lg:order-2 fade-in-delayed">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden">
                 <img src={interiorImage} alt="نوشیدنی‌های خاص کافه دورهمی" className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>
             </div>
           </div>
