@@ -7,14 +7,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: "تماس با ما",
-      content: "۰۲۱-۱۲۳۴۵۶۷۸",
-      action: "tel:+982112345678"
+      content: "۰۹۱۰۹۱۰۸۸۷۸",
+      action: "tel:+989109108878"
     },
     {
       icon: MessageCircle,
       title: "واتساپ",
       content: "پیام سریع در واتساپ",
-      action: "https://wa.me/989123456789"
+      action: "https://wa.me/989109108878"
     },
     {
       icon: Instagram,
@@ -25,14 +25,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "آدرس",
-      content: "تهران، باغ شاه، خیابان اصلی، پلاک ۱۲۳",
+      content: "یزد، تفت، ده بالا، جاده کمربندی، کافه دورهمی",
       action: null
     }
   ];
 
   const workingHours = [
-    { day: "شنبه تا چهارشنبه", time: "۹:۰۰ - ۲۳:۰۰" },
-    { day: "پنج‌شنبه و جمعه", time: "۱۰:۰۰ - ۲۴:۰۰" }
+    { day: "هر روز", time: "۱۲:۰۰ - ۲۳:۰۰" }
   ];
 
   return (
@@ -123,16 +122,21 @@ const Contact = () => {
                 موقعیت مکانی
               </h3>
               
-              {/* Map Placeholder */}
+              {/* Map */}
               <Card className="card-warm fade-in-delayed">
-                <CardContent className="p-0">
-                  <div className="h-64 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-xl flex items-center justify-center">
-                    <div className="text-center rtl">
-                      <MapPin className="h-12 w-12 text-primary mx-auto mb-2" />
-                      <p className="text-muted-foreground">
-                        نقشه تعاملی به زودی...
-                      </p>
-                    </div>
+                <CardContent className="p-6">
+                  <div className="text-center rtl">
+                    <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
+                    <p className="text-muted-foreground mb-4">
+                      مشاهده موقعیت دقیق در گوگل مپ
+                    </p>
+                    <Button
+                      onClick={() => window.open('https://maps.app.goo.gl/Bn9NENniziqjXM4j7', '_blank')}
+                      className="w-full"
+                      variant="outline"
+                    >
+                      باز کردن در گوگل مپ
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
