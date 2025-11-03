@@ -1,6 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-cafe.jpg";
+import heroImage from "@/assets/dorehami-exterior.png";
 
 const Hero = () => {
   const handleOrderClick = () => {
