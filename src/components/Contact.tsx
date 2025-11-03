@@ -128,15 +128,31 @@ const Contact = () => {
                   <div className="text-center rtl">
                     <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                     <p className="text-muted-foreground mb-4">
-                      مشاهده موقعیت دقیق در گوگل مپ
+                      مشاهده موقعیت در نقشه
                     </p>
-                    <Button
-                      onClick={() => window.open('https://maps.app.goo.gl/Bn9NENniziqjXM4j7', '_blank')}
-                      className="w-full"
-                      variant="outline"
-                    >
-                      باز کردن در گوگل مپ
-                    </Button>
+                    <div className="space-y-3">
+                      <Button
+                        onClick={() => window.open('https://maps.app.goo.gl/Bn9NENniziqjXM4j7', '_blank')}
+                        className="w-full"
+                        variant="outline"
+                      >
+                        گوگل مپ
+                      </Button>
+                      <Button
+                        onClick={() => window.open('https://nshn.ir/00_bXfQL_G2nrw', '_blank')}
+                        className="w-full"
+                        variant="outline"
+                      >
+                        نشان
+                      </Button>
+                      <Button
+                        onClick={() => window.open('https://balad.ir/p/5HzTTsS6tDd6Q3', '_blank')}
+                        className="w-full"
+                        variant="outline"
+                      >
+                        بلد
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
