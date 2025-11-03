@@ -1,4 +1,4 @@
-import interiorImage from "@/assets/interior-garden.jpg";
+import interiorImage from "@/assets/dorehami-drinks.png";
 const About = () => {
   return <section className="section-warm py-20">
       <div className="container mx-auto px-4">
@@ -22,7 +22,7 @@ const About = () => {
             {/* Image */}
             <div className="order-1 lg:order-2 fade-in-delayed">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img src={interiorImage} alt="فضای داخلی و باغ کافه دورهمی" className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 hover:scale-105" />
+                <img src={interiorImage} alt="نوشیدنی‌های خاص کافه دورهمی" className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>
             </div>
